@@ -22,7 +22,7 @@ module.exports = {
         };
 
         api.smtp.client.sendMail(email, callback);
-      }
+      },
 
       client: nodemailer.createTransport(smtpTransport(api.config.smtp));
     }
