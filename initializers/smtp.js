@@ -27,7 +27,7 @@ module.exports = {
       client: nodemailer.createTransport(smtpTransport(api.config.smtp))
     }
 
-    api.trasnports.push(transport);
+    api.transports.push(transport);
 
     next();
   },
