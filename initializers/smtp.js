@@ -6,8 +6,8 @@ module.exports = {
 
   initialize: function(api, next){
     var transport = {
-      name: 'smtp'
-      description: 'for sending E-Mail via SMTP'
+      name: 'smtp',
+      description: 'for sending E-Mail via SMTP',
 
       requiredDataKeys: {
         person: ['email']
