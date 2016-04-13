@@ -1,0 +1,15 @@
+.env
+
+node_modules/*
+log/*
+pids/*
+locales/*
+tmp/*
+
+public/javascript/actionheroClient.js
+public/javascript/actionheroClient.min.js
+
+npm-debug.log
+.DS_Store
+.env
+dump.rdb
