@@ -13,9 +13,14 @@ module.exports = {
         person: ['email']
       },
 
+      campaignVariables: [
+        'from',
+        'subject'
+      ],
+
       deliver: function(payload, person, callback){
         var email = {
-          to:      person.data.email,
+          to:      person.data.data.email,
           from:    payload.from,
           subject: payload.subject,
           html:    payload.body,
