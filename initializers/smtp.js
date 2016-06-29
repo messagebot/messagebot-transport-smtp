@@ -21,7 +21,7 @@ module.exports = {
           html:    payload.body,
         };
 
-        transport.sendMail(email, callback);
+        transport.client.sendMail(email, callback);
       },
 
       client: nodemailer.createTransport(smtpTransport(api.config.smtp))
