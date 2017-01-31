@@ -12,7 +12,7 @@
     "node": "^4.2.0"
   },
   "dependencies": {
-    "nodemailer": "^2.1.0",
+    "nodemailer": "^3.0.0",
     "nodemailer-smtp-transport": "^2.2.1"
   },
   "devDependencies": {},
