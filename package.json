@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "nodemailer": "^3.0.0",
-    "nodemailer-smtp-transport": "^2.2.1"
+    "nodemailer-smtp-transport": "^2.7.3"
   },
   "devDependencies": {},
   "scripts": {}
