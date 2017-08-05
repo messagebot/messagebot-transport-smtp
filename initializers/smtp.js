@@ -1,10 +1,10 @@
-var nodemailer    = require('nodemailer');
-var smtpTransport = require('nodemailer-smtp-transport');
+var nodemailer = require('nodemailer')
+var smtpTransport = require('nodemailer-smtp-transport')
 
 module.exports = {
-  loadPriority:  1000,
+  loadPriority: 1000,
 
-  initialize: function(api, next){
+  initialize: function (api, next) {
     var transport = {
       name: 'smtp',
       description: 'for sending E-Mail via SMTP',
@@ -18,22 +18,22 @@ module.exports = {
         'subject'
       ],
 
-      deliver: function(payload, person, callback){
+      deliver: function (payload, person, callback) {
         var email = {
-          to:      person.data.data.email,
-          from:    payload.from,
+          to: person.data.email,
+          from: payload.from,
           subject: payload.subject,
-          html:    payload.body,
-        };
+          html: payload.body
+        }
 
-        transport.client.sendMail(email, callback);
+        transport.client.sendMail(email, callback)
       },
 
       client: nodemailer.createTransport(smtpTransport(api.config.smtp))
     }
 
-    api.transports.push(transport);
+    api.transports.push(transport)
 
-    next();
-  },
-};
+    next()
+  }
+}
