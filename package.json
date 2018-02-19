@@ -16,7 +16,7 @@
     "nodemailer-smtp-transport": "^2.2.1"
   },
   "devDependencies": {
-    "standard": "^10.0.2"
+    "standard": "^11.0.0"
   },
   "scripts": {
     "test": "standard"
