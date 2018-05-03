@@ -9,7 +9,7 @@
     "url": "https://github.com/messagebot/messagebot-transport-smtp.git"
   },
   "engines": {
-    "node": "^4.2.0"
+    "node": "10"
   },
   "dependencies": {
     "nodemailer": "^4.0.0",
